@@ -1,0 +1,6 @@
+default:
+	gcc -o server server.c -lssl -lcrypto -Wall -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include
+	gcc -o client client.c -lssl -lcrypto -Wall -L/usr/local/opt/openssl/lib -I/usr/local/opt/openssl/include
+
+clean:
+	-rm server client
